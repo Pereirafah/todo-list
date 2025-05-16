@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background: url("./img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #5a5656;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+}
+
+.button-add-task:active {
+    opacity: 0.6; 
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+    max-height: 420px;
+    overflow: auto;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 15px; /*espaço entre as tarefas*/
+    cursor: pointer; /*troca do mause pala mãozinha*/
+   
+}
+
+.container.footer {
+margin-top: 150px;
+}
+
+img {
+    height: 25px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; /*transição das imagens do lado, aparecer e sumir*/
+}
+
+.task:hover img {
+    opacity: 1;
+    
+}
+
+.done {
+    background-color: #00fbe2;
+    text-decoration: line-through; /*linha cortando*/
+}
